@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  margin: 0;
+}
+#root {
+  flex-grow: 1;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  font-family: "Dela Gothic One", cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding-left: 1rem;
+  background-color: #737495;
+  box-shadow: 1px 1px 3px 3px #808080;
+  color: white;
+}
+header > ul img {
+  height: 2rem;
+  border-radius: 50%;
+  padding: 1px;
+}
+header > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.auth-link:hover {
+  cursor: pointer;
+}
+header > ul li {
+  margin-right: 10px;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section > article {
+  display: flex;
+  justify-content: space-between;
+  min-width: 15rem;
+  color: white;
+  margin: 0.1rem;
+  background-color: #737495;
+}
+
+article > div {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+article > div:nth-child(1) {
+  flex-grow: 1;
+}
+article > div:nth-child(2) {
+  width: 2rem;
+  background-color: #f17d80;
+}
+
+article > div:nth-child(3) {
+  width: 2rem;
+  background-color: #dbdcd4;
+}
+article > div:nth-child(4) {
+  width: 2rem;
+  background-color: #a3c8da;
+}
+
+article > div:nth-child(2):hover,
+article > div:nth-child(3):hover,
+article > div:nth-child(4):hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 2px #808080;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+label span {
+  color: #737495;
+  width: 4.5rem;
+}
+
+input,
+select {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.4rem;
+  color: #f17d80;
+  border: 2px solid #737495;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+button {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 0.5rem 0 0 auto;
+  padding: 0.4rem;
+  background-color: #f17d80;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  background-color: #737495;
+}
